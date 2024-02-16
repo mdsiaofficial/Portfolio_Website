@@ -1,0 +1,74 @@
+.header{
+    height: 100vh;
+}
+
+.nav{
+    /* border: 0.5px solid black; */
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.445);
+    padding: 2px 5px;
+    display: flex;
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: blanchedalmond;
+}
+
+.div1{
+    display: flex;
+    position: relative;
+}
+
+.list{
+    position: absolute;
+    top: 15px;
+    
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    list-style: none;
+    
+}
+
+.list li a{
+    text-decoration: none;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.list li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.list li:hover{
+    background-color: rgb(235, 235, 100);
+    color: black;
+}
+
+
+.hero_section{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero_div{
+    /* height: 30px; */
+    margin-top: 150px;
+}
+
+.hero{
+    
+
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
