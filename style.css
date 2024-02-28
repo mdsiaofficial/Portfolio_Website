@@ -8,7 +8,8 @@
 }
 
 body{
-    background-color: rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
+    color: #ffffff;
 }
 
 .header{
@@ -19,6 +20,7 @@ body{
     width: 100%;
     padding: 20px 10%;
     background: rgb(255, 68, 0);
+    /* background: transparent; */
   
     display: flex;
     justify-content: space-between;
@@ -28,10 +30,11 @@ body{
 
 .logo{
     font-size: 25px;
-    color: wheat;
+    color: rgb(221, 221, 221);
+    letter-spacing: 3px;
     text-decoration: none;
     font-weight: bolder;
-    font-family: 'La Machine Company', monospace, consolas, 'Courier New pro', Courier;
+    font-family: 'IBM Plex Mono Medium', 'La Machine Company', monospace, consolas, 'Courier New pro', Courier;
 }
 
 .navbar a{
@@ -56,4 +59,74 @@ body{
 
 .navbar a:hover::after{
     width: 100%;
+}
+
+.home{
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.home-content{
+
+    /* background: orangered; */
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.home-content h1{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.home-content h3{
+    font: 32px;
+    font-weight: 550;
+    color: rgb(127, 255, 176);
+
+}
+
+.home-content p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.home-content .btn-box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 330px;
+    height: 50px;
+    /* background: orangered; */
+    
+
+}
+
+.btn-box a{
+    width: 130px;
+    height: 100%;
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: aqua;
 }
