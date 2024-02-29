@@ -12,7 +12,7 @@
 :root{
     --bg-color: #0E2954;
     --second-bg-color: aqua;
-    --third-bg-color: rgb(46, 143, 75);
+    --third-bg-color: rgb(229, 255, 0);
     --text-color: white;
     --main-color: #F05454;
 }
@@ -35,8 +35,8 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    /* background: var(--main-color); */
-    background: transparent;
+    background: var(--main-color);
+    /* background: transparent; */
 
     display: flex;
     justify-content: space-between;
@@ -210,4 +210,30 @@ section{
     border-radius: 50%;
     font-size: 30px;
     text-decoration: none;
+
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-sci a:hover{
+    color: var(--bg-color);
+}
+
+.home-sci a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+
 }
