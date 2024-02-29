@@ -208,6 +208,6 @@ section{
     color: var(--second-bg-color);
     border: 0.2rem solid var(--second-bg-color);
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
 }
