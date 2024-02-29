@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(34, 34, 34);
+    background: rgb(16, 7, 36);
     color: #ffffff;
 }
 
@@ -30,7 +30,7 @@ body{
 
 .logo{
     font-size: 25px;
-    color: rgb(221, 221, 221);
+    color: #ffffff;
     letter-spacing: 3px;
     text-decoration: none;
     font-weight: bolder;
@@ -39,7 +39,7 @@ body{
 
 .navbar a{
     font-size: 18px;
-    color: bisque;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -50,7 +50,7 @@ body{
     content: "";
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: aqua;
     position: absolute;
     left: 0;
     bottom: -6;
@@ -63,6 +63,10 @@ body{
 
 .home{
 
+    height: 100vh;
+    background-image: url("img/background.png");
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -101,7 +105,7 @@ body{
     display: flex;
     justify-content: space-between;
 
-    width: 330px;
+    width: 345px;
     height: 50px;
     /* background: orangered; */
     
@@ -109,24 +113,109 @@ body{
 }
 
 .btn-box a{
-    width: 130px;
+    width: 150px;
     height: 100%;
     background-color: aqua;
     border: 2px solid aqua;
     border-radius: 10px;
     display: inline-flex;
-    width: 150px;
-    height: 100%;
     font-size: 20px;
     color: black;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:hover{
+    background: transparent;
+    color: aqua;
 }
 
 .btn-box a:nth-child(2){
     background: transparent;
     color: aqua;
+}
+
+.btn-box a:nth-child(2):hover{
+    color: black;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: aqua;
+}
+
+.btn-box a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* background: orangered; */
+    background: black;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+    
+
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+
+
+}
+
+
+.home-sci{
+    position: absolute;
+    bottom: 50px;
+    width: 170px;
+    /* background:rgb(255, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+
+    width: 50px;
+    height: 50px;
+    background:transparent;
+    border: 1px solid aqua;  
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.home-sci a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aqua;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-sci a:hover{
+    color: black;
+}
+.home-sci a:hover::before{
+    width: 100%;
+
 }
