@@ -12,7 +12,7 @@
 :root{
     --bg-color: #0E2954;
     --second-bg-color: aqua;
-    --third-bg-color: rgb(229, 255, 0);
+    --third-bg-color: #0f1c31;
     --text-color: white;
     --main-color: #F05454;
 }
@@ -118,7 +118,7 @@ section{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 4rem;
 }
 
@@ -245,7 +245,7 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--bg-color);
+    background: var(--third-bg-color);
     padding-bottom: 6rem;
 }
 
@@ -285,10 +285,62 @@ section{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid var(--main-color);
-    border-bottom: .2rem solid var(--main-color);
-    border-left: .2rem solid var(--second-bg-color);
-    border-right: .2rem solid var(--second-bg-color);
+    border-top: .3rem solid var(--bg-color);
+    border-bottom: .3rem solid var(--bg-color);
+    border-left: .3rem solid var(--second-bg-color);
+    border-right: .3rem solid var(--second-bg-color);
 
 
 }
+
+.about-content{
+    text-align: center;
+
+}
+
+.about-content h3{
+    font-size: 2.8rem;
+}
+
+.about-content p{
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem;
+
+}
+
+.btn-box.btns{
+    display: inline-block;
+    width: 15rem;
+}
+
+
+/* 
+
+.btn-box.btns a::before{
+    background: var(--second-bg-color);
+} 
+ */
+
+
+
+ .education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+
+
+ }
+
+ .education .education-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+
+
+ }
