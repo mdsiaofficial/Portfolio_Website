@@ -6,7 +6,7 @@
     padding: 0;
 
     box-sizing: border-box;
-    font-family: 'IBM Plex Mono Medium', 'La Machine Company',monospace, consolas, 'Courier New pro', Courier;
+    font-family: 'consolas', 'IBM Plex Mono Medium', 'La Machine Company',monospace, 'Courier New pro', Courier;
 }
 
 :root{
@@ -34,7 +34,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding:0px 9%;
     background: var(--main-color);
     /* background: transparent; */
 
@@ -47,7 +47,7 @@ body{
 
 .logo{
 
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     color: var(--text-color);
     font-family: 'IBM Plex Mono Medium', 'La Machine Company',monospace, consolas, 'Courier New pro', Courier;
     font-weight: 600;
@@ -113,7 +113,7 @@ section{
     font-size: 3.2rem;
     font-weight:700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
+    -webkit-text-stroke: .5px var(--main-color);
     
 }
 
@@ -235,5 +235,60 @@ section{
 
 .home-sci a:hover::before{
     width: 100%;
+
+}
+
+.about{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+}
+
+
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span{
+    color: var(--second-bg-color);
+}
+.about-img{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.about-img img{
+    border-radius: 50%;
+    width: 90%;
+    border: 0.2rem solid var(--second-bg-color);
+}
+
+.about-img .circle-spin{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--second-bg-color);
+    border-right: .2rem solid var(--second-bg-color);
+
 
 }
