@@ -334,3 +334,19 @@ section{
 
  }
 
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column{
+
+    flex: 1 1 40rem;
+}
+
+.education-column .title{
+
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
