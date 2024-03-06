@@ -11,7 +11,7 @@
 
 :root{
     --bg-color: #0E2954;
-    --second-bg-color: aqua;
+    --second-bg-color: #00ffff;
     --third-bg-color: #0f1c31;
     --text-color: white;
     --main-color: #F05454;
@@ -535,3 +535,94 @@ section{
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
     width: 90%;
 }
+
+
+/* contact design */
+
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form{
+    max-height: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    /* width: 50; */
+    width: 49%; /* Reduced width to create a gap between the form input fields */
+    margin: .8rem 0;
+
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+
+    
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    
+}
+
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+
+    
+    color: var(--text-color);
+    
+}
+
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--third-bg-color);
+    border-radius: .6rem;
+
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus{
+    width: 100%;
+}
+.contact form .textarea-field{
+
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+    
+}
+
+.contact form .textarea-field textarea{
+    resize: none;
+    
+}
+
+.contact form .btn-box.btns .btn{
+
+    cursor: pointer;
+    
+}
+
