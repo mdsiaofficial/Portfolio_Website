@@ -102,6 +102,13 @@ section{
     line-height: 1.3;
 }
 
+.home-content h1 span{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--second-bg-color);
+}
+
 .home-content .text-animate{
     position: relative;
     width: 32.8rem;
@@ -423,7 +430,7 @@ section{
 
 .skills{
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 37rem;
     background: var(--third-bg-color);
 }
 
@@ -541,7 +548,7 @@ section{
 
 .contact{
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 25rem;
 }
 
 .contact form{
@@ -628,18 +635,18 @@ section{
     
 }
 
+
 .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--third-bg-color);
+    background-color: var(--third-bg-color);
 }
 
-.footer-text p{
-
-    font-size: 1.6rem;
+.footer p{
+    font-size: 1.5rem;
 }
 
 .footer-iconTop a{
@@ -647,19 +654,11 @@ section{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: 0.8rem;
     background-color: var(--main-color);
-    border-radius: 50%;
-    border: .2rem solid var(--main-color)
-    
+    border-radius: 30%;
+    border: .3rem solid var(--main-color);
+    font-size: 2.5rem;
+    color: var(--bg-color);
 }
 
-
-
-
-
-.footer-iconTop a i{
-    font-size: 2rem;
-
-    color: var(--text-color);
-}
